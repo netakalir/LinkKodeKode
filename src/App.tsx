@@ -1,6 +1,7 @@
-import Post from "./comp/Post";
+import Post from "./components/Post";
 import "./App.css"
-import type { PostProps } from "./comp/Post";
+import type { PostProps } from "./components/Post";
+import Header from "./components/Header";
 
 
 
@@ -31,11 +32,33 @@ export const posts: PostProps[] = [{
   owner: "ali",
   date: new Date().toLocaleString()
 
+}, {
+  img: "src/assets/logo.jpg",
+  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
+  likes: 100,
+  owner: "ali",
+  date: new Date().toLocaleString()
+
+}, {
+  img: "src/assets/logo.jpg",
+  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
+  likes: 100,
+  owner: "ali",
+  date: new Date().toLocaleString()
+
+}, {
+  img: "src/assets/logo.jpg",
+  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
+  likes: 100,
+  owner: "ali",
+  date: new Date().toLocaleString()
+
 }]
 
 export default function App() {
   return (
     <div className="app">
+      <Header/>
       <div className="posts">
         {posts.map((post, index) => (
           <Post key={index} {...post} />

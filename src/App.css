@@ -1,15 +1,21 @@
-.app{
+.app {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 5% 90% 5%;
-    grid-template-columns: 2% 98% 2%;
-    
+    grid-template-rows: 10% 85% 5%;
+    grid-template-columns: 4% 90% 6%;
+    overflow:scroll;
+
+
 }
 
-.posts{
+.posts {
     display: flex;
     grid-row: 2/3;
     grid-column: 2/3;
-    gap: 2em;
+    gap: 0.3em;
+    height: 98%;
+    width: 98%;
+    flex-wrap: wrap;
+
 }

@@ -1,0 +1,19 @@
+/* header{
+    width: 98%;
+} */
+.title {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    font-size: 4em
+}
+
+.logo {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    border-radius: 60%;
+    width: 80%;
+    height: 80%;
+    justify-self: start;
+    margin-top: 3px;
+}
