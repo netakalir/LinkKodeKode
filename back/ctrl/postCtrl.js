@@ -23,7 +23,7 @@ export async function createPost(req, res) {
         }
         try {
             if (post.owner !== undefined && post.discrption !== undefined) {
-                if(result.length <= 5){
+                if(result.length >=0 && result.length <=5){
                     await createPostDal(post)
                     res.json("post created successfully: ", post)
                 }
