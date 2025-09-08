@@ -1,7 +1,7 @@
-import Post from "./components/Post";
+import Post from "./components/application-layout/Post";
 import "./App.css"
-import type { PostProps } from "./components/Post";
-import Header from "./components/Header";
+import type { PostProps } from "./components/application-layout/Post";
+import Header from "./components/application-layout/Header";
 
 
 
