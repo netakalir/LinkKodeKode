@@ -11,7 +11,7 @@ export default function PostPage() {
         const fetchPost = async () => {
             const result = await getAllPost();
             setPosts(result);
-            const postId = 1; 
+            const postId = 1;
             const correntPost = await getPostById(postId);
             setPost(correntPost);
         };
@@ -24,7 +24,7 @@ export default function PostPage() {
     return (
         <div className="page">
             <Header />
-            {post && (
+            {post && posts && (
                 <div className="currentPost">
                     <Post {...post} />
                 </div>
