@@ -3,6 +3,7 @@ import "./post.css"
 
 
 export type PostProps = {
+    id:number
     img: string,
     discrption: string,
     likes: number,
@@ -13,7 +14,7 @@ export default function Post(post: PostProps) {
     return (
         <>
             <div className="post" >
-                <img className="img" src={post.img} alt="" />
+                <img className="img" src={post.img} alt="profileImg" />
                 <h2 className="discrption">{`discrption: ${post.discrption}`}</h2>
                 <div className="details">
                     <p >{`like: ${post.likes}`}</p>
