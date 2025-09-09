@@ -26,7 +26,8 @@ export default function HomePage() {
                     <Post key={index} {...post} />
                 ))}
             </div>
-            <button onClick={() => navigate("/NewPostPage")}>newPost</button>
+            <button className="newPostBtn" onClick={() => navigate("/NewPostPage")}>newPost</button>
+            <button className="currentPostBtn" onClick={() => navigate("/PostPage")}>Post</button>
         </div>
     )
 }

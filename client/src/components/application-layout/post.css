@@ -43,7 +43,7 @@
         height: 14em;
         padding: 1.5em;
         margin: 1em;
-        background-color: rgba(76, 92, 154, 0.865);
+        /* background-color: rgba(76, 92, 154, 0.865); */
     }
 
     .details,
@@ -57,7 +57,7 @@
     .post {
         width: 41%;
         min-width: 250px;
-        background-color: rgb(50, 70, 154);
+        /* background-color: rgb(50, 70, 154); */
         height: 16em;
         gap: 1em;
         margin: 1.5em;
@@ -65,7 +65,7 @@
 
     .details,
     .discrption {
-        color: white;
+        /* color: white; */
 
     }
 

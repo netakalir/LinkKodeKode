@@ -6,10 +6,7 @@ export default function NewPost() {
     const [discription, setDiscription] = useState("")
     // const [msg, setMsg] = useState("");
     const handelCreateNewPost = async () => {
-
         const result = await createNewPost(owner, discription)
-
-
     }
     return (
         <div className="newPost">

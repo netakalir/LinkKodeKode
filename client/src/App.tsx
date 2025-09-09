@@ -3,6 +3,7 @@ import "./App.css"
 import { Route, Routes } from "react-router";
 import HomePage from "./pages/homePage";
 import NewPostPage from "./pages/newPostPage";
+import PostPage from "./pages/PostPage";
 
 
 
@@ -13,7 +14,8 @@ export default function App() {
     <div>
     <Routes>
       <Route path="/"element={<HomePage />}/>
-      <Route path="/newPost"element={<NewPostPage />}/>
+      <Route path="/newPostPage"element={<NewPostPage />}/>
+      <Route path="/postPage"element={<PostPage />}/>
     </Routes>
     </div>
   )
