@@ -1,49 +1,19 @@
-posts = [{
-  img: "htpp//localhost:3000/images/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 20,
-  owner: "neta",
-  date: new Date().toLocaleString()
-}, {
-  img: "htpp//localhost:3000/images/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 10,
-  owner: "namoi",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "htpp//localhost:3000/images/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 50,
-  owner: "netanel",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "htpp//localhost:3000/images/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}, {
-  img:"htpp//localhost:3000/images/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}, {
-  img:"htpp//localhost:3000/images/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "htpp//localhost:3000/images/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}]
+[
+  {
+    "id": 1,
+    "img": "htpp//localhost:3000/images/1.png",
+    "discrption": "new post",
+    "likes": 0,
+    "owner": "neta",
+    "date": "9.9.2025, 15:02:12"
+  },
+  {
+    "id": 2,
+    "img": "htpp//localhost:3000/images/1.png",
+    "discrption": "new ",
+    "likes": 0,
+    "owner": "neta",
+    "date": "9.9.2025, 15:02:12"
+  }
+  
+]
