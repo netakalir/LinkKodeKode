@@ -27,7 +27,7 @@ export default function HomePage() {
                 ))}
             </div>
             <button className="newPostBtn" onClick={() => navigate("/NewPostPage")}>newPost</button>
-            <button className="currentPostBtn" onClick={() => navigate("/PostPage")}>Post</button>
+            {/* <button className="currentPostBtn" onClick={() => navigate("/PostPage")}>Post</button> */}
         </div>
     )
 }

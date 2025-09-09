@@ -15,7 +15,7 @@ export default function App() {
     <Routes>
       <Route path="/"element={<HomePage />}/>
       <Route path="/newPostPage"element={<NewPostPage />}/>
-      <Route path="/postPage"element={<PostPage />}/>
+      <Route path="/postPage/"element={<PostPage />}/>
     </Routes>
     </div>
   )

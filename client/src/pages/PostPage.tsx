@@ -3,16 +3,22 @@ import Header from "../components/application-layout/Header";
 import type { PostProps } from "../components/application-layout/Post";
 import { getAllPost, getPostById } from "../api.fetch";
 import Post from "../components/application-layout/Post";
+import { useParams } from "react-router";
 
 export default function PostPage() {
     const [post, setPost] = useState<PostProps>()
     const [posts, setPosts] = useState<PostProps[]>([])
+    const { postId } = useParams();
+
     useEffect(() => {
         const fetchPost = async () => {
             const result = await getAllPost();
             setPosts(result);
-            const postId = 1;
             const correntPost = await getPostById(postId);
+            console.log("postId", postId);
+
+            console.log("correntPost",correntPost);
+
             setPost(correntPost);
         };
         fetchPost();

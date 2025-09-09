@@ -35,13 +35,14 @@ export async function createNewPost(owner:string,discrption:string) {
     }
 }
 
-export async function getPostById(id:number) {
+export async function getPostById(id:string| undefined) {
     try {
         const response = await fetch(`http://localhost:4010/linkKodeKode/getPost/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
             }
+            
         })
         const data = await response.json()
         return data

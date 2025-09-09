@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import "./post.css"
 // import "src/assets/logo.jpg"
 
@@ -13,7 +14,8 @@ export type PostProps = {
 export default function Post(post: PostProps) {
     return (
         <>
-            <div className="post" >
+           <Link to={"/postPage"}>
+           <div className="post" >
                 <img className="img" src={post.img} alt="profileImg" />
                 <h2 className="discrption">{`discrption: ${post.discrption}`}</h2>
                 <div className="details">
@@ -22,6 +24,7 @@ export default function Post(post: PostProps) {
                     <p >{`date: ${post.date}`}</p>
                 </div>
             </div>
+           </Link> 
         </>
     )
 }
