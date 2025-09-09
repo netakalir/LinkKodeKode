@@ -1,4 +1,4 @@
-import { type PostProps } from "./components/application-layout/Post";
+// import { type PostProps } from "./components/application-layout/Post";
 
 export async function getAllPost() {
     try {
@@ -17,14 +17,14 @@ export async function getAllPost() {
     }
 }
 
-export async function createNewPost(post: PostProps) {
+export async function createNewPost(owner:string,discrption:string) {
     try {
         const response = await fetch("http://localhost:4010/linkKodeKode/createPost", {
             method:"POST",
             headers:{
                 "Content-Type": "application/json"
             },
-            body:JSON.stringify(post)
+            body:JSON.stringify({owner,discrption})
         })
         const data = await response.json()
         console.log(data);
