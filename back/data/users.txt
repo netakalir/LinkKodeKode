@@ -3,5 +3,10 @@
     "userId": 1,
     "name": "neta",
     "password": "$2b$10$/PSLMgKrjOtatf5gDknasuWRwIAevSntbrVYI8K4Bqos9XHnoRfKC"
+  },
+  {
+    "userId": 2,
+    "name": "ali",
+    "password": "$2b$10$8w4d7fMLOoaRg4fhwUP/5eSBHkqxfwPYVWSGmteDQRMgRjx6Pa9a2"
   }
 ]
