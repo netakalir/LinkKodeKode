@@ -1,5 +1,5 @@
 import Header from "../components/application-layout/Header";
-import RejisterC from "../components/register"
+import RejisterC from "../components/Register"
 
 export default function Register() {
     return (
