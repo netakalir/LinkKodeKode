@@ -16,7 +16,7 @@ export async function register(req, res) {
         try {
             if (user.name && user.password) {
                 await createUser(user)
-                res.json(`user created successfully: Remember your ID number: ${user.userId}`)
+                res.json(user.userId )
             }
             else {
                 res.json("missing username or password")

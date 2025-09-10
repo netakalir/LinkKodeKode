@@ -7,7 +7,7 @@ const router = express.Router()
 
 
 router.get("/getAllPosts",authenticateUser(),getAllPosts)
-router.get("/getPost/:id ",authenticateUser(),getPostById)
+router.get("/getPost/:id",getPostById)
 router.post("/createPost",authenticateUser(),createPost)
 
 export default router

@@ -2,31 +2,6 @@
   {
     "userId": 1,
     "name": "neta",
-    "password": 1234
-  },
-  {
-    "userId": 2,
-    "name": "neta",
-    "password": 1234
-  },
-  {
-    "userId": 3,
-    "name": "neta",
-    "password": 1234
-  },
-  {
-    "userId": 4,
-    "name": "netanel",
-    "password": "$2b$10$fTGDDC8H5ezhy8HJ3fFUVep1fyZQkWyBUCZCi9zm8Rws7Arz9vBHG"
-  },
-  {
-    "userId": 5,
-    "name": "avi",
-    "password": "$2b$10$Qk1bj6D8IxRDDRb6LNd3r.DvUCUXxGpJwQpEN/R81.FJQjTGAE/oO"
-  },
-  {
-    "userId": 6,
-    "name": "lavi",
-    "password": "$2b$10$A5COjsTFdTlrOLeWaz3dk.rDjI0BOnPVG0yKMK...9s460t9w/8gu"
+    "password": "$2b$10$/PSLMgKrjOtatf5gDknasuWRwIAevSntbrVYI8K4Bqos9XHnoRfKC"
   }
 ]

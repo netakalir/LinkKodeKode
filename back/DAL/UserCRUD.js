@@ -34,7 +34,7 @@ export async function getUserByID(id) {
     const res = JSON.parse(data)
     let user;
     for (let i = 0; i < res.length; i++){
-        if (res[i].userId === id){
+        if (res[i].userId == id){
             user = res[i]
             return user
         }
@@ -44,4 +44,3 @@ export async function getUserByID(id) {
     }
     return null
 }
-// console.log( await getUserByID(1))
