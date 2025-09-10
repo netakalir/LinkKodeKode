@@ -26,8 +26,9 @@ export default function LoginC() {
                     navigate("/HomePage")
                 }, 3000);
             }
-            else{
+            else {
                 setTimeout(() => {
+                    setMsg("login fild😒:Returning you to the home page");
                     navigate("/")
                 }, 2000);
             }

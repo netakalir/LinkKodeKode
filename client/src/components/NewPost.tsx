@@ -1,18 +1,20 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { createNewPost } from "../api.fetch";
 import "./newPost.css"
 import { useNavigate } from "react-router";
+import { userContext } from "../Context";
 export default function NewPost() {
     const [owner, setOwner] = useState("")
     const [discription, setDiscription] = useState("")
     const [msg, setMsg] = useState("");
+    const user = useContext(userContext)
     let navigate = useNavigate()
     const handelCreateNewPost = async () => {
-        const result = await createNewPost(owner, discription)
-        setMsg(result)
+        const result = await createNewPost(owner, discription,user)
+        setMsg(`${result} We are creating your post right now.`)
         
         setTimeout(() => {
-            navigate("/")
+            navigate("/homePage")
         }, 3000);
     }
     return (

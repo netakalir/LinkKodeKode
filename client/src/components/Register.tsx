@@ -22,7 +22,7 @@ export default function RejisterC() {
         }
         setTimeout(() => {
                 navigate("/")
-            }, 2000); 
+            }, 4000); 
     };
     return (
         <>

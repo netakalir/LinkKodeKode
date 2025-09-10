@@ -41,13 +41,12 @@ export async function createNewPost(owner: string, discrption: string, user: use
     }
 }
 
-export async function getPostById(id: string | undefined,user: userContextType) {
+export async function getPostById(id: string | undefined) {
     try {
         const response = await fetch(`http://localhost:4010/linkKodeKode/getPost/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                // "authorization": `Bearer ${user.user?.token}`
             }
 
         })

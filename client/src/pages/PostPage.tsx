@@ -18,7 +18,7 @@ export default function PostPage() {
         const fetchPost = async () => {
             const result = await getAllPost(user);
             setPosts(result);
-            const correntPost = await getPostById(postId,user);
+            const correntPost = await getPostById(postId);
             console.log("postId", postId);
 
             console.log("correntPost",correntPost);
