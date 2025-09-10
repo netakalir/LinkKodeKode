@@ -1,58 +1,23 @@
-import Header from "../components/application-layout/Header";
+import { useContext, useEffect, useState } from "react";
+import { getAllPost } from "../api.fetch";
+import { useNavigate } from "react-router";
+import { userContext, type userContextType } from "../Context";
 import Post, { type PostProps } from "../components/application-layout/Post";
+import Header from "../components/application-layout/Header";
 import "./style.css"
 
-export const posts: PostProps[] = [{
-  img: "src/assets/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 20,
-  owner: "neta",
-  date: new Date().toLocaleString()
-}, {
-  img: "src/assets/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 10,
-  owner: "namoi",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "src/assets/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 50,
-  owner: "netanel",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "src/assets/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "src/assets/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "src/assets/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}, {
-  img: "src/assets/logo.jpg",
-  discrption: "ugvihkbkjbvkglihkbk.h gcluivbk",
-  likes: 100,
-  owner: "ali",
-  date: new Date().toLocaleString()
-
-}]
 
 export default function HomePage() {
+    const [posts, setPosts] = useState<PostProps[]>([])
+    const user = useContext<userContextType>(userContext)
+    let navigate = useNavigate()
+    useEffect(() => {
+        const fetchPost = async () => {
+            const result = await getAllPost(user);
+            setPosts(result)
+        }
+        fetchPost()
+    }, [])
     return (
         <div className="page">
             <Header />
@@ -61,6 +26,7 @@ export default function HomePage() {
                     <Post key={index} {...post} />
                 ))}
             </div>
+            <button className="newPostBtn" onClick={() => navigate("/NewPostPage")}>newPost</button>
         </div>
     )
 }

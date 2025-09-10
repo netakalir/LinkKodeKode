@@ -1,0 +1,22 @@
+[
+  {
+    "userId": 1,
+    "name": "neta",
+    "password": "$2b$10$/PSLMgKrjOtatf5gDknasuWRwIAevSntbrVYI8K4Bqos9XHnoRfKC"
+  },
+  {
+    "userId": 2,
+    "name": "ali",
+    "password": "$2b$10$8w4d7fMLOoaRg4fhwUP/5eSBHkqxfwPYVWSGmteDQRMgRjx6Pa9a2"
+  },
+  {
+    "userId": 3,
+    "name": "avi",
+    "password": "$2b$10$j0YBFkhPj778jUy4BU5tjebnhqViIoYI57kq1/RB63NouYTfvTTu2"
+  },
+  {
+    "userId": 4,
+    "name": "neta",
+    "password": "$2b$10$hz9M6Ik/I5J1SUB2z570bOO7jBvQhUITlYXAogzs4XvPY7ST/TJVG"
+  }
+]

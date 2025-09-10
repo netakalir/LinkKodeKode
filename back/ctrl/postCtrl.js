@@ -1,9 +1,24 @@
-import { getAllPostsDal, createPostDal } from "../DAL/CRUD.js";
+import { getAllPostsDal, createPostDal } from "../DAL/PostCRUD.js";
 
 export async function getAllPosts(req, res) {
     try {
         const result = await getAllPostsDal()
-        res.json("all posts : ", result)
+        res.json(result)
+    } catch (error) {
+        res.json("CTRL Error: post isn't exsist");
+    }
+}
+
+export async function getPostById(req, res) {
+    try {
+        const result = await getAllPostsDal()
+        let post;
+        for (let i = 0; i < result.length; i++) {
+            if (result[i].id == req.params.id){
+                post = result[i]
+                res.json(post)
+            }
+        }
     } catch (error) {
         res.json("CTRL Error: post isn't exsist");
     }
@@ -23,11 +38,11 @@ export async function createPost(req, res) {
         }
         try {
             if (post.owner !== undefined && post.discrption !== undefined) {
-                if(result.length >=0 && result.length <=5){
+                if (result.length >= 0 && result.length <= 5) {
                     await createPostDal(post)
-                    res.json("post created successfully: ", post)
+                    res.json("post created successfully ")
                 }
-                else{
+                else {
                     res.json("We are unable to add another post.")
                 }
             }
