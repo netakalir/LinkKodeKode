@@ -3,18 +3,15 @@ import { verifyToken } from "../utils/auth.js";
 export function authenticateUser() {//פונקציה שתקבל מערך של שחקנים מורשים ותפקידה יהיה לאמת אותם
     return async (req, res, next) => {
         try {
-            console.log("try to pass the middleware");
             const authHeader = req.headers["authorization"];
             const token = authHeader && authHeader.split(" ")[1]; 
             if (!token) {
-                console.log("token not found");
                 return res.status(401).json({ error: "no token provided" });//בדיקה אם קיים טוקן
             }
             
             const user = await verifyToken(token);//שליחה לפונקציה שתאמת את הטוקן
             
             if (!user) {
-                console.log("token isnt ferify");
                 return res.status(401).json({ error: "invalid or expired token" });//תגובה אם הטוקן לא מאושר
             }
 
@@ -23,7 +20,6 @@ export function authenticateUser() {//פונקציה שתקבל מערך של ש
             next();
 
         } catch (error) {
-            console.log("auth eroor from catch ");
             return res.status(500).json({ error: "authentication error" });
         }
     };

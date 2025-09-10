@@ -8,5 +8,10 @@
     "userId": 2,
     "name": "ali",
     "password": "$2b$10$8w4d7fMLOoaRg4fhwUP/5eSBHkqxfwPYVWSGmteDQRMgRjx6Pa9a2"
+  },
+  {
+    "userId": 3,
+    "name": "avi",
+    "password": "$2b$10$j0YBFkhPj778jUy4BU5tjebnhqViIoYI57kq1/RB63NouYTfvTTu2"
   }
 ]
