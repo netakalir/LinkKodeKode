@@ -14,7 +14,7 @@ export type PostProps = {
 export default function Post(post: PostProps) {
     return (
         <>
-           <Link to={"/postPage"}>
+           <Link to={`/PostPage/${post.id}`}>
            <div className="post" >
                 <img className="img" src={post.img} alt="profileImg" />
                 <h2 className="discrption">{`discrption: ${post.discrption}`}</h2>
