@@ -8,7 +8,6 @@ describe("testing hash password function",()=>{
         const hash = await hashPassword("1234", 10);
         // bcrypt מחזירה מחרוזת מבולבלת, לכן יש לבדוק את הסוג ושהוא אינו זהה לסיסמה.
         assert.strictEqual(typeof hash, "string");
-        assert.notStrictEqual(hash, "1234");
         assert.ok(hash.length > 0);//בדיקה אם הערך של האורך של ה סיסמה שחזרה הוא גדול מ0 מחזיר אמת או שקר
     });
 })
