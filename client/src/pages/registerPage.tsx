@@ -3,9 +3,11 @@ import RejisterC from "../components/register"
 
 export default function Register() {
     return (
-        <div className="pages">
+        <div className="page">
             <Header />
-            <RejisterC />
+            <div className="loginRegister">
+                <RejisterC />
+            </div>
         </div>
     )
 }

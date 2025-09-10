@@ -3,9 +3,11 @@ import LoginC from "../components/Login";
 
 export default function Login() {
   return (
-    <div className="pages">
+    <div className="page">
       <Header />
-      <LoginC />
+      <div className="loginRegister">
+        <LoginC />
+      </div>
     </div>
   )
 }
