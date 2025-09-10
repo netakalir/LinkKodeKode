@@ -16,23 +16,28 @@
     border-radius: 50%;
     width: 10%;
     height: 25%;
+    
 }
 
 .discrption {
     font-family: Arial, Helvetica, sans-serif!important;
+    align-content: flex-end;
+    align-items: flex-end;
     align-self: flex-start;
-    height: 10%;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    /* justify-self: ; */
+    height: 5%;
     width: 100%;
 }
 
 
 .details {
-    align-self: flex-start;
+    align-self: start;
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important;
     color: rgba(135, 127, 127, 0.854)!important;
     font-size: 0.9em;
-    height: 10%;
 
 }
 
@@ -55,7 +60,7 @@
 
 @media((min-width:901px) and (max-width:1400px)) {
     .post {
-        width: 41%;
+        width: 31%;
         min-width: 250px;
         /* background-color: rgb(50, 70, 154); */
         height: 16em;

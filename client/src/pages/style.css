@@ -66,10 +66,10 @@
 }
 
 .links {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4e4949;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    color: rgb(52, 52, 189);
     width: 40%;
     padding: 8px 8px;
     transition: background 0.2s;
@@ -151,7 +151,4 @@
         justify-content: space-around;
     }
 
-    /* .page {
-        background-color:  rgba(211, 205, 205, 0.603);
-    } */
 }

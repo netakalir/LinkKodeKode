@@ -1,10 +1,9 @@
 import { Link } from "react-router"
 import "./post.css"
-// import "src/assets/logo.jpg"
 
 
 export type PostProps = {
-    id:number
+    id: number
     img: string,
     discrption: string,
     likes: number,
@@ -14,17 +13,17 @@ export type PostProps = {
 export default function Post(post: PostProps) {
     return (
         <>
-           <Link to={`/PostPage/${post.id}`}>
-           <div className="post" >
-                <img className="img" src={post.img} alt="profileImg" />
-                <h2 className="discrption">{`discrption: ${post.discrption}`}</h2>
-                <div className="details">
-                    <p >{`like: ${post.likes}`}</p>
-                    <p >{`owner: ${post.owner}`}</p>
-                    <p >{`date: ${post.date}`}</p>
-                </div>
+            <div className="post" >
+                <Link to={`/PostPage/${post.id}`}>
+                    <img className="img" src={post.img} alt="profileImg" />
+                    <h2 className="discrption">{`discrption: ${post.discrption}`}</h2>
+                    <div className="details">
+                        <p >{`like: ${post.likes}`}</p>
+                        <p >{`owner: ${post.owner}`}</p>
+                        <p >{`date: ${post.date}`}</p>
+                    </div>
+                </Link>
             </div>
-           </Link> 
         </>
     )
 }

@@ -9,12 +9,11 @@ It allows users to:
 - Read posts  
  
 
-<!-- All actions require **user authentication** and a valid **token**.   -->
+get all post & create post require **user authentication** and a valid **token**.  
 
 The implementation emphasizes:
 - TypeScript usage  
 - Responsiveness  
-- Accessibility  
 
 ---
 
@@ -41,7 +40,13 @@ cd client
 npm run dev
 ---
 ####  Api routes:
-GET    /api/getPost/:id    -> fetch post by id
-GET    /api/getAllPost       -> fetch all posts
-POST   /api/createPost      -> create a new post
+GET    /LinkKodeKode/getPost/:id    -> fetch post by id
+GET    /LinkKodeKode/getAllPost       -> fetch all posts
+POST   /LinkKodeKode/createPost      -> create a new post
+POST   /LinkKodeKode/login          -> login user
+POST   /LinkKodeKode/register       -> register a new user
 
+
+##### test server:
+run :
+node --test

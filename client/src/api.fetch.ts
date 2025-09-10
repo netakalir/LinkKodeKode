@@ -1,10 +1,7 @@
-// import { type PostProps } from "./components/application-layout/Post";
-
 import type { userContextType } from "./Context";
 
-export async function getAllPost(user: userContextType) {
-    console.log("token", user);
 
+export async function getAllPost(user: userContextType) {
     try {
         const response = await fetch("http://localhost:4010/linkKodeKode/getAllPosts", {
             method: "GET",
@@ -14,10 +11,8 @@ export async function getAllPost(user: userContextType) {
             }
         })
         const data = await response.json()
-        console.log(data);
         return data
     } catch (error) {
-        console.log(error);
         return null
     }
 }
@@ -33,10 +28,8 @@ export async function createNewPost(owner: string, discrption: string, user: use
             body: JSON.stringify({ owner, discrption })
         })
         const data = await response.json()
-        console.log(data);
         return data
     } catch (error) {
-        console.log(error);
         return null
     }
 }
@@ -50,12 +43,9 @@ export async function getPostById(id: string | undefined) {
             }
 
         })
-        console.log("response id", response);
         const data = await response.json()
-        console.log("data",data);
         return data
     } catch (error) {
-        console.log(error);
         return null
     }
 }
@@ -70,8 +60,7 @@ export async function register(name: string, password: string) {
     })
     if (!response.ok) {
         const error = await response.json();
-        console.log(error);
-        return null;
+        return error;
     }
     const data = await response.json();
     return data

@@ -1,8 +1,10 @@
 import { useContext, useState } from "react"
 import { createNewPost } from "../api.fetch";
-import "./newPost.css"
 import { useNavigate } from "react-router";
 import { userContext } from "../Context";
+import "./newPost.css"
+
+
 export default function NewPost() {
     const [owner, setOwner] = useState("")
     const [discription, setDiscription] = useState("")

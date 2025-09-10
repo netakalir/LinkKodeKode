@@ -2,10 +2,7 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router";
 import { userContext } from "../Context";
 import { login } from "../api.fetch";
-
-
-
-
+import "./loginRegister.css"
 
 
 export default function LoginC() {
@@ -18,7 +15,6 @@ export default function LoginC() {
     const handleLogin = async () => {
         const result = await login(fullName, password, userId);
         user.setUser(result)
-        console.log(result);
         if (result) {
             setMsg("login successfully😊: A few seconds and we're there.");
             if (result.token) {

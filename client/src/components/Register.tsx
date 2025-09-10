@@ -3,7 +3,6 @@ import { useNavigate } from "react-router";
 import { register } from "../api.fetch";
 
 
-
 export default function RejisterC() {
     const [fullName, setFullName] = useState("")
     const [password, setpassword] = useState("")
@@ -11,8 +10,6 @@ export default function RejisterC() {
     let navigate = useNavigate()
     const handleRegister = async () => {
         const result = await register(fullName, password);
-        console.log(result);
-        
         if (result) {
             setMsg(`Wellcome to LinkKodeKode😊 
                 Remember your ID number: ${result}`);
@@ -26,7 +23,7 @@ export default function RejisterC() {
     };
     return (
         <>
-            <div className="loginC">
+            <div className="registerC">
                 <div className="optionsDiv">
                     <p className="option">register</p>
                 </div>
