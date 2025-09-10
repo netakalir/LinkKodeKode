@@ -35,7 +35,7 @@ export async function generateToken(user) {
                 name: user.name
             },
             process.env.JWT_SECRET,
-            { expiresIn: "1h" }
+            { expiresIn: "5h" }
         )
         return token
     } catch (error) {

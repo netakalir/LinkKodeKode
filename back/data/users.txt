@@ -13,5 +13,10 @@
     "userId": 3,
     "name": "avi",
     "password": "$2b$10$j0YBFkhPj778jUy4BU5tjebnhqViIoYI57kq1/RB63NouYTfvTTu2"
+  },
+  {
+    "userId": 4,
+    "name": "neta",
+    "password": "$2b$10$hz9M6Ik/I5J1SUB2z570bOO7jBvQhUITlYXAogzs4XvPY7ST/TJVG"
   }
 ]
