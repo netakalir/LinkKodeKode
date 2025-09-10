@@ -1,14 +1,13 @@
 import express from "express";
 import { createPost, getAllPosts ,getPostById} from "../ctrl/postCtrl.js";
+import { authenticateUser } from "../middleWare/authenticateUser.js";
 
 
 const router = express.Router()
 
 
-router.get("/getAllPosts",getAllPosts)
-router.get("/getPost/:id ",getPostById)
-router.post("/createPost",createPost)
-// router.put("/updatePost/:id",)
-// router.delete("/deletePost/:id",)
+router.get("/getAllPosts",authenticateUser(),getAllPosts)
+router.get("/getPost/:id ",authenticateUser(),getPostById)
+router.post("/createPost",authenticateUser(),createPost)
 
 export default router

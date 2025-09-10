@@ -1,4 +1,4 @@
-import { getAllPostsDal, createPostDal } from "../DAL/CRUD.js";
+import { getAllPostsDal, createPostDal } from "../DAL/PostCRUD.js";
 
 export async function getAllPosts(req, res) {
     try {
